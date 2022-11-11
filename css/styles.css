@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
 
 * {
   margin: 0;
@@ -82,7 +82,7 @@ header .container-info .text {
     color: #e5e7eb;
 }
 
-header .container-info .signup-btn {
+.signup-btn {
     border: 0;
     padding: 10px 40px;
     font-size: 18px;
@@ -92,6 +92,106 @@ header .container-info .signup-btn {
     color: #e5e7eb;
     text-align: center;
     border-radius: 10px;
+}
+
+#info {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#info h1 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+#info .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+#info .card {
+    width: 200px;
+    text-align: center;
+}
+
+#info .frame {
+    height: 200px;
+    width: 200px;
+    border: 4px solid #3882f6;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+#testimonial {
+    min-height: 450px;
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonial figure {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+#testimonial blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1f2937;
+}
+
+#testimonial figcaption {
+    align-self: flex-end;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+#signup {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup .container {
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #e5e7eb;
+}
+
+#signup .signup-btn {
+    border: 2px solid #e5e7eb;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #e5e7eb;
+    min-height: 100px;
+    background-color: #1f2937;
 }
 
 @media (max-width: 720px) {
@@ -111,4 +211,38 @@ header .container-info .signup-btn {
     .container-image {
         width: 100%;
     }
+
+    #info {
+        padding: 10px;
+    }
+
+    #info  h1{
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #info .card-container {
+        gap: 10px;
+    }
+
+    #testimonial figure{
+        width: 90%;
+    }
+
+    #testimonial blockquote {
+        font-size: 30px;
+    }
+
+    #testimonial figcaption {
+        margin-top: 10px;
+        align-self: flex-start;
+        font-size: 25px;
+    }
+
+    #signup .container {
+        width: 90%;
+        padding: 20px;
+    }
+
 }
